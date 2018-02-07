@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default navbar-fixed-top" style="z-index: 100">
+  <!-- Logo and toggle -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" style="height: 34px; padding-top: 7px;" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="sr-only">{{ 'Toggle navigation' | translate }}</span>
+      <i class="fa fa-bars fa-lg" style="color: #333;"></i>
+    </button>
+  </div>
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li><a routerLink="/admin/dashboard" class="nav-link">{{ 'Dashboard'}}</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+      <a class="select-nav">{{ 'Menu' }} <i class="fa fa-angle-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/admin/dashboard"><i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> {{ 'Dashboard' }}</a></li>
+          <li class="disabled"><a href><i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> {{ 'Venue' }}</a></li>
+          <li class="disabled"><a href><i class="fa fa-fw fa-user-md" aria-hidden="true"></i> {{ 'User' }}</a></li>
+          <li class="disabled"><a href><i class="fa fa-fw fa-user-md" aria-hidden="true"></i> {{ 'Device' }}</a></li>
+          <li class="disabled"><a href><i class="fa fa-fw fa-user-md" aria-hidden="true"></i> {{ 'License' }}</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- collapse -->
+</nav>
