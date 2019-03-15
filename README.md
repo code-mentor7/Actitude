@@ -37,3 +37,4 @@ BE: `node server`
 
 ## Reference
 This project is generated from [here](https://github.com/sorakthunly/angular2-express-node-mysql-seed-project)
+"# Actitude" 
