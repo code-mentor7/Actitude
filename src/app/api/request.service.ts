@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { RequestParams } from './request-params';
 import { Observable } from 'rxjs/Observable';
 import { Http, Response, Headers } from '@angular/http';
-import { MeService } from '../me.service';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
@@ -10,7 +9,7 @@ import 'rxjs/add/operator/catch';
 export class RequestService {
    private headers = new Headers({'Content-Type': 'application/json'});
 
-  constructor(private http: Http, private me: MeService) { }
+  constructor(private http: Http) { }
 
   observableFact(requestParams: RequestParams): Observable<Response> {
     const options: any = {};

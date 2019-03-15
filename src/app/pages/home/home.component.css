@@ -1,0 +1,14 @@
+.navbar-toggler {
+  display: block;
+}
+
+.login {
+  padding-right: 10px;
+  font-size: large;
+  cursor: pointer;
+}
+
+.bg-info {
+  background-color: white!important;
+  border-radius: 10px!important;
+}

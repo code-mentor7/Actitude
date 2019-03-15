@@ -8,37 +8,43 @@ import * as _ from 'lodash';
 @Injectable()
 export class ApiService {
 
-  mobikiStatistics = {
+  getBackgroudImage = {
     get: () => this.request
       .get()
-      .url('/api/mobiki/statistics')
-      .auth()
-  };
+      .url('/api/GetImagePath')
+  }
 
-  users = {
-    get: () => this.request
-      .get()
-      .url('/api/user')
-      .auth(),
-    getCount: () => this.request
-      .get()
-      .url('/api/user/getCount')
-      .auth()
-  };
-
-  authToken = {
-    post: (auth: AuthData) => this.request
-      .post()
-      .url('/api/auth/token')
-      .payload(auth)
-  };
-
-  me = {
-    get: () => this.request
-      .get()
-      .url('/api/me')
-      .auth()
-  };
+  // mobikiStatistics = {
+  //   get: () => this.request
+  //     .get()
+  //     .url('/api/mobiki/statistics')
+  //     .auth()
+  // };
+  //
+  // users = {
+  //   get: () => this.request
+  //     .get()
+  //     .url('/api/user')
+  //     .auth(),
+  //   getCount: () => this.request
+  //     .get()
+  //     .url('/api/user/getCount')
+  //     .auth()
+  // };
+  //
+  // authToken = {
+  //   post: (auth: AuthData) => this.request
+  //     .post()
+  //     .url('/api/auth/token')
+  //     .payload(auth)
+  // };
+  //
+  // me = {
+  //   get: () => this.request
+  //     .get()
+  //     .url('/api/me')
+  //     .auth()
+  // };
 
 
   // users = {

@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "http://localhost:3000",
+    "target": "http://36.it-hotellet.dk/ActitudeRest/ServerActitudeRest.dll",
     "secure": false
   }
 }

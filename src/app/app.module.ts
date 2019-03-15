@@ -14,20 +14,13 @@ import { ConfirmationService } from 'primeng/primeng';
 import { PaginatorModule } from 'primeng/components/paginator/paginator';
 import { GrowlModule } from 'primeng/components/growl/growl';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import { RoutesModule } from './routes/routes.module';
-import { LoginFormComponent } from './login/login-form/login-form.component';
 import { ConfService } from './conf.service';
 import { ApiService } from './api/api.service';
 import { RequestService } from './api/request.service';
 import { AuthService } from './auth.service';
-import { MeService } from './me.service';
-import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { AuthGuardService } from './routes/guards/auth-guard.service';
-import { RolesGuardService } from './routes/guards/roles-guard.service';
-import { GmapGuardService } from './routes/guards/gmap-guard.service';
 import {ChartModule} from 'primeng/primeng';
+import { HomeComponent } from './pages/home/home.component';
 
 export function HttpLoaderFactory(http: Http) {
     return new TranslateHttpLoader(http);
@@ -36,10 +29,7 @@ export function HttpLoaderFactory(http: Http) {
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    LoginFormComponent,
-    DashboardComponent,
-    NavBarComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -66,11 +56,7 @@ export function HttpLoaderFactory(http: Http) {
     ConfService,
     ApiService,
     RequestService,
-    AuthService,
-    MeService,
-    AuthGuardService,
-    RolesGuardService,
-    GmapGuardService
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
