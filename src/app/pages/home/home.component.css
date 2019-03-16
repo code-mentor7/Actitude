@@ -2,13 +2,33 @@
   display: block;
 }
 
+.logo {
+  font-family: 'logo';
+  font-size: 40px;
+  color: #103E51
+}
+
 .login {
   padding-right: 10px;
-  font-size: large;
+  font-size: 25px;
   cursor: pointer;
+  font-family: 'robotoslab-blod';
+  color: #103E51!important;
 }
 
 .bg-info {
   background-color: white!important;
   border-radius: 10px!important;
+}
+
+.h2_white {
+  font-family: 'robotoslab-bold';
+  color: #FFFFFF;
+  font-size: 60px;
+  text-shadow: #000000;
+  opacity: 100%;
+}
+
+.h1_white {
+  font-size: 80px;
 }

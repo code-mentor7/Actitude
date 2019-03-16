@@ -8,7 +8,8 @@
 
 body
 {
-    padding-top: 50px;
+  padding-top: 50px;
+  background-color: green;
 }
 td a i {
   cursor: pointer;
@@ -186,3 +187,75 @@ h1
 
 /* add padding  */
 .left-addon input  { padding-left:  25px; }
+
+@font-face {
+  font-family: logo;
+  src: url(assets/Fonts/SonicaBrush_Crashed/Resistenza_Sonica.Brush.Crashed.otf) format("opentype");
+}
+/* Roboto */
+@font-face {
+  font-family: roboto-black;
+  src: url(assets/Fonts/Roboto/Roboto-Black.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-blackitalic;
+  src: url(assets/Fonts/Roboto/Roboto-BlackItalic.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(assets/Fonts/Roboto/Roboto-Bold.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-bolditalic;
+  src: url(assets/Fonts/Roboto/Roboto-BoldItalic.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-italic;
+  src: url(assets/Fonts/Roboto/Roboto-Italic.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-light;
+  src: url(assets/Fonts/Roboto/Roboto-Light.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-lightitalic;
+  src: url(assets/Fonts/Roboto/Roboto-LightItalic.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-medium;
+  src: url(assets/Fonts/Roboto/Roboto-Medium.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-mediumitalic;
+  src: url(assets/Fonts/Roboto/Roboto-MediumItalic.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url(assets/Fonts/Roboto/Roboto-Regular.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-thin;
+  src: url(assets/Fonts/Roboto/Roboto-Thin.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-thinitalic;
+  src: url(assets/Fonts/Roboto/Roboto-ThinItalic.ttf) format("opentype");
+}
+
+/* Roboto_Slab */
+@font-face {
+  font-family: robotoslab-bold;
+  src: url(assets/Fonts/Roboto_Slab/RobotoSlab-Bold.ttf) format("opentype");
+}
+@font-face {
+  font-family: robotoslab-light;
+  src: url(assets/Fonts/Roboto_Slab/RobotoSlab-Light.ttf) format("opentype");
+}
+@font-face {
+  font-family: robotoslab-regular;
+  src: url(assets/Fonts/Roboto_Slab/RobotoSlab-Regular.ttf) format("opentype");
+}
+@font-face {
+  font-family: robotoslab-thin;
+  src: url(assets/Fonts/Roboto_Slab/RobotoSlab-Thin.ttf) format("opentype");
+}
