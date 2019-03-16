@@ -1,0 +1,10 @@
+.h2_black {
+  font-family: 'robotoslab-bold';
+  color: black;
+  font-size: 30px;
+  text-shadow: #000000;
+  opacity: 100%;
+  letter-spacing: 2px;
+  line-height: 70px;
+  cursor: pointer;
+}

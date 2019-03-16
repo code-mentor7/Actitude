@@ -8,7 +8,15 @@
 
 body
 {
+
+}
+
+.body-container{
+  width:76%;
   padding-top: 50px;
+  margin-left:auto;
+  margin-right:auto;
+  min-height: 100vh;
   background-color: green;
 }
 td a i {

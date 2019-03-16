@@ -4,8 +4,9 @@
 
 .logo {
   font-family: 'logo';
-  font-size: 40px;
-  color: #103E51
+  font-size: 45px;
+  color: #103E51;
+  cursor: pointer;
 }
 
 .login {
@@ -24,11 +25,28 @@
 .h2_white {
   font-family: 'robotoslab-bold';
   color: #FFFFFF;
-  font-size: 60px;
+  font-size: 40px;
   text-shadow: #000000;
   opacity: 100%;
+  letter-spacing: 5px;
 }
 
 .h1_white {
   font-size: 80px;
+}
+
+.btn-info {
+  background-color: #2A9FD8!important;
+  border-radius: 60px;
+  color: #103E51;
+  padding: 20px!important;
+}
+
+.h4_black {
+  font-family: 'robotoslab-bold';
+  font-size: 25px;
+  text-shadow: #000000;
+  opacity: 100%;
+  padding: 10px;
+  letter-spacing: 3px;
 }
