@@ -22,6 +22,10 @@ export class HomeComponent implements OnInit {
     this.showMenu = true;
   }
 
+  goLogin() {
+    this.router.navigate(['login']);
+  }
+
   onCancel() {
     this.showMenu = false;
   }

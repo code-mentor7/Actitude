@@ -24,6 +24,49 @@ body
   max-width: 75%;
 }
 
+.h2_dark {
+  font-family: 'robotoslab-bold';
+  color: #103E51;
+  font-size: 50px;
+}
+
+.h4_dark {
+  font-family: 'robotoslab-bold';
+  font-size: 25px;
+  text-shadow: #000000;
+  opacity: 100%;
+  padding: 10px;
+  letter-spacing: 3px;
+}
+
+.h3_dark {
+  font-family: 'robotoslab-bold';
+  font-size: 20px;
+  color: #103E51;
+}
+
+.btn-info {
+  background-color: #2A9FD8!important;
+  border-radius: 60px;
+  color: #103E51;
+  padding: 20px!important;
+}
+
+.input-info {
+  background-color: #F3F3F3;
+  border-radius: 60px;
+  color: #103E51;
+  padding: 20px!important;
+  border: none;
+  width: 400px;
+  height: 100px;
+}
+
+::placeholder {
+  color: #103E51;
+  font-family: 'roboto-bold';
+  font-size: 25px;
+}
 
 
 td a i {

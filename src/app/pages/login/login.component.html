@@ -1,0 +1,25 @@
+<div class="container main-panel" style="background-color: white;">
+  <div style="text-align: center; padding-bottom: 70px;">
+    <h2 class="h2_dark">{{ 'So nice to see you again!' }}</h2>
+  </div>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group text-center" style="padding-bottom: 30px;">
+      <input name="email" type="email" class="input-info" placeholder="{{ 'Email' }}" [(ngModel)]="email">
+    </div>
+    <div class="form-group text-center" style="padding-bottom: 30px;">
+      <input name="password" type="password" class="input-info" placeholder="{{ 'Password' }}" [(ngModel)]="password">
+    </div>
+    <div class="form-group text-center">
+      <button type="submit" class="btn btn-info login-btn"><h4 class="h4_dark">{{ 'Login' }}</h4></button>
+    </div>
+  </form>
+  <div class="text-center row" style="padding-top: 40px;">
+    <a style="border: none;" class="offset-sm-4 col-sm-2">
+      <h2 class="h3_dark" style="cursor: pointer">{{ 'New user?' }}</h2>
+    </a>
+    <a style="border: none; text-align: left" class="col-sm-2">
+      <h2 class="h3_dark" style="cursor: pointer">{{ 'Forgot password?' }}</h2>
+    </a>
+  </div>
+
+</div>
