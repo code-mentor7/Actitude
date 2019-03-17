@@ -22,5 +22,9 @@ export class HomeComponent implements OnInit {
     this.showMenu = true;
   }
 
+  onCancel() {
+    this.showMenu = false;
+  }
+
 
 }

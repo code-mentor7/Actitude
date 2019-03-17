@@ -17,6 +17,8 @@
     <button type="button" class="btn btn-info"><h4 class="h4_black">{{ 'View Existing Projects' }}</h4></button>
   </div>
 </div>
-<app-menu *ngIf="showMenu">
+<app-menu *ngIf="showMenu"
+          (dismiss)="onCancel()"
+>
 
 </app-menu>
