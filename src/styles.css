@@ -75,14 +75,14 @@ body
 
 .logo {
   font-family: 'logo';
-  font-size: 45px;
+  font-size: 60px;
   color: #103E51;
   cursor: pointer;
 }
 
 .navbar-toggler {
-  display: block;
-  border: none;
+  display: block!important;
+  border: none!important;
 }
 
 
