@@ -30,6 +30,10 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['interest']);
   }
 
+  goAllProjects() {
+    this.router.navigate(['all']);
+  }
+
   onCancel() {
     this.showMenu = false;
   }

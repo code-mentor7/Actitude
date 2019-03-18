@@ -14,7 +14,7 @@
     <h1 class="h2_white h1_white">{{ 'work for a better world' }}</h1>
     <div style="padding-top: 50px;"></div>
     <button type="button" class="btn btn-info" style="margin-right: 50px;" (click)="goInterest()"><h4 class="h4_dark">{{ 'Map Your Volunteer Passion' }}</h4></button>
-    <button type="button" class="btn btn-info"><h4 class="h4_dark">{{ 'View Existing Projects' }}</h4></button>
+    <button type="button" class="btn btn-info" (click)="goAllProjects()"><h4 class="h4_dark">{{ 'View Existing Projects' }}</h4></button>
   </div>
 </div>
 <app-menu *ngIf="showMenu"

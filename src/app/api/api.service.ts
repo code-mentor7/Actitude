@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { RequestService } from './request.service';
-import { AuthData } from '../auth-data';
 import * as _ from 'lodash';
 
 

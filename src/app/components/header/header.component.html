@@ -3,8 +3,8 @@
     <h1 class="logo col-sm-3" style="margin: 0!important;" (click)="goHome()">{{ 'ACTITUDE' }}</h1>
     <a *ngIf="flag === 'login'" class="h5_dark col-sm-8" style="text-align: right;"><span class="underline">{{ 'Login' }}</span></a>
     <a *ngIf="flag === 'other'" class="h5_dark col-sm-8" style="text-align: right;" (click)="goLogin()">{{ 'Login' }}</a>
-    <a *ngIf="flag === ''" class="h5_dark col-sm-7" style="text-align: right;"> {{ 'Projects' }} </a>
-    <a *ngIf="flag === ''" class="h5_dark col-sm-1" style="text-align: right;"> {{ 'Account' }} </a>
+    <a *ngIf="flag === 'projects'" class="h5_dark col-sm-7" style="text-align: right;"><span class="underline">{{ 'Projects' }}</span></a>
+    <a *ngIf="flag === 'projects'" class="h5_dark col-sm-1" style="text-align: right;" (click)="goLogin()"> {{ 'Account' }} </a>
     <button class="navbar-toggler col-sm-1" type="button" style="float: right;">
       <img src="../../../assets/img/Menu.png" (click)="goMenu()"/>
     </button>
