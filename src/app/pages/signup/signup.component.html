@@ -1,0 +1,28 @@
+<app-header [flag]="'other'"></app-header>
+
+<div class="container main-panel" style="background-color: white;">
+  <div style="text-align: center; padding-bottom: 10px;">
+    <h2 class="h2_dark">{{ 'Join the cause' }}</h2>
+    <h2 class="h4_dark">{{ 'Create an account so we can save your choices' }}</h2>
+    <h2 class="h4_dark">{{ 'and you can share your projects' }}</h2>
+  </div>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group text-center" style="padding-bottom: 20px;">
+      <input name="email" type="email" class="input-info" placeholder="{{ 'Email' }}" [(ngModel)]="email">
+    </div>
+    <div class="form-group text-center" style="padding-bottom: 20px;">
+      <input name="password" type="password" class="input-info" placeholder="{{ 'Password' }}" [(ngModel)]="password">
+    </div>
+    <div class="form-group text-center">
+      <button type="submit" class="btn btn-info signup-btn"><h4 class="h4_dark">{{ 'Create account' }}</h4></button>
+    </div>
+  </form>
+  <div class="text-center row" style="padding-top: 100px;">
+    <a style="border: none;" class="col-sm-12">
+      <h2 class="h3_dark" style="cursor: pointer">{{ 'Skip this' }}</h2>
+    </a>
+  </div>
+
+</div>
+
+<app-footer></app-footer>
