@@ -94,6 +94,23 @@ body
   border: none!important;
 }
 
+.h2_black {
+  font-family: 'robotoslab-bold';
+  color: #103E51;
+  font-size: 30px;
+  text-shadow: #000000;
+  opacity: 100%;
+  letter-spacing: 2px;
+  line-height: 70px;
+  cursor: pointer;
+}
+
+.underline {
+  border-bottom: 4px solid #2A9FD8;
+  display: inline-block;
+  line-height: 1.5;
+}
+
 
 
 

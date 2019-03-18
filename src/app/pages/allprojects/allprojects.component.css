@@ -1,0 +1,9 @@
+.input-info {
+  padding: 10px!important;
+  width: 150px!important;
+  height: 20px!important;
+  margin-left: 30px;
+}
+::placeholder {
+  font-size: 15px;
+}

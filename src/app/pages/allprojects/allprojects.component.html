@@ -1,6 +1,16 @@
 <app-header [flag]="'projects'"></app-header>
 
 <div class="container main-panel" style="background-color: white;">
+  <div class="row project-header">
+    <a class="h2_black col-sm-3" style="text-align: left;"><span class="underline">{{ 'All projects' }}</span></a>
+    <a class="h2_black col-sm-3" style="text-align: left;"><span class="underline">{{ 'Your projects' }}</span></a>
+
+    <input type="text" class="input-info col-sm-1" placeholder="{{ 'Age: 0-20' }}" disabled>
+    <input type="text" class="input-info col-sm-1" placeholder="{{ 'Middle east' }}" disabled>
+    <input type="text" class="input-info col-sm-1" placeholder="{{ 'Education' }}" disabled>
+    <input type="text" class="input-info col-sm-1" placeholder="{{ 'All genders' }}" disabled>
+  </div>
+  <div class="row"></div>
 </div>
 
 <app-footer></app-footer>
