@@ -1,16 +1,12 @@
 <div *ngIf="!showMenu" class="container" style="background-color: white; max-width: 75%;">
   <div class="row header-part">
-    <div class="col-sm-3">
-      <h1 class="logo" style="margin: 0!important;" (click)="goHome()">{{ 'ACTITUDE' }}</h1>
-    </div>
-    <div class="col-sm-8">
-
-    </div>
-    <div class="col-sm-1">
-      <button class="navbar-toggler" type="button" style="float: right;">
-        <img src="../../../assets/img/Menu.png" (click)="goMenu()"/>
-      </button>
-    </div>
+    <h1 class="logo col-sm-3" style="margin: 0!important;" (click)="goHome()">{{ 'ACTITUDE' }}</h1>
+    <a class="h5_dark col-sm-8" style="text-align: right;"> {{ 'Login' }} </a>
+    <!--<p class="h5_dark cols-sm-4"> {{ 'Projects' }} </p>-->
+    <!--<p class="h5_dark cols-sm-4"> {{ 'Account' }} </p>-->
+    <button class="navbar-toggler col-sm-1" type="button" style="float: right;">
+      <img src="../../../assets/img/Menu.png" (click)="goMenu()"/>
+    </button>
   </div>
   <div class="divide" style="padding-bottom: 30px;"></div>
   <div class="divide"></div>
