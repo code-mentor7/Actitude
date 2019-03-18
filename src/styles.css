@@ -68,6 +68,13 @@ body
   font-size: 25px;
 }
 
+.divide {
+  border-top: 4px solid #103E51;
+  border-radius: 4px;
+}
+
+
+
 
 td a i {
   cursor: pointer;
