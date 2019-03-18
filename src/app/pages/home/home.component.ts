@@ -38,5 +38,9 @@ export class HomeComponent implements OnInit {
     this.showMenu = false;
   }
 
+  onLogout() {
+    this.showMenu = false;
+  }
+
 
 }

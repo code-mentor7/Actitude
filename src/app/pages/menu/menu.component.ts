@@ -1,4 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -8,9 +9,23 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class MenuComponent implements OnInit {
 
   @Output() dismiss = new EventEmitter();
-  constructor() { }
+  @Output() logout = new EventEmitter();
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goAllProjects() {
+    this.router.navigate(['all']);
+  }
+
+  goSignUp() {
+    this.router.navigate(['signup']);
+  }
+
+  goLogout() {
+    this.logout.emit();
+    this.router.navigate(['home']);
   }
 
   onDismiss() {
