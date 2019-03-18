@@ -73,6 +73,17 @@ body
   border-radius: 4px;
 }
 
+.logo {
+  font-family: 'logo';
+  font-size: 45px;
+  color: #103E51;
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  display: block;
+  border: none;
+}
 
 
 

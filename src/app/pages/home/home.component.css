@@ -1,15 +1,3 @@
-.navbar-toggler {
-  display: block;
-  border: none;
-}
-
-.logo {
-  font-family: 'logo';
-  font-size: 45px;
-  color: #103E51;
-  cursor: pointer;
-}
-
 .login {
   padding-right: 10px;
   font-size: 25px;
