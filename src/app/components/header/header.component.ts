@@ -23,6 +23,10 @@ export class HeaderComponent implements OnInit {
     this.showMenu = true;
   }
 
+  goLogin() {
+    this.router.navigate(['login']);
+  }
+
   onCancel() {
     this.showMenu = false;
   }
