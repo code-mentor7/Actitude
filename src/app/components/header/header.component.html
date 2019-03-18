@@ -1,9 +1,9 @@
 <div *ngIf="!showMenu" class="container" style="background-color: white; max-width: 75%;">
   <div class="row header-part">
     <h1 class="logo col-sm-3" style="margin: 0!important;" (click)="goHome()">{{ 'ACTITUDE' }}</h1>
-    <a class="h5_dark col-sm-8" style="text-align: right;"> {{ 'Login' }} </a>
-    <!--<p class="h5_dark cols-sm-4"> {{ 'Projects' }} </p>-->
-    <!--<p class="h5_dark cols-sm-4"> {{ 'Account' }} </p>-->
+    <a *ngIf="flag === 'login'" class="h5_dark col-sm-8" style="text-align: right;"> {{ 'Login' }} </a>
+    <a *ngIf="flag !== 'login'" class="h5_dark col-sm-7" style="text-align: right;"> {{ 'Projects' }} </a>
+    <a *ngIf="flag !== 'login'" class="h5_dark col-sm-1" style="text-align: right;"> {{ 'Account' }} </a>
     <button class="navbar-toggler col-sm-1" type="button" style="float: right;">
       <img src="../../../assets/img/Menu.png" (click)="goMenu()"/>
     </button>

@@ -50,7 +50,8 @@ body
   font-family: roboto-bold;
   font-size: 20px;
   color: #103E51;
-  padding-top: 15px;
+  padding-top: 20px;
+  cursor: pointer;
 }
 
 .btn-info {
