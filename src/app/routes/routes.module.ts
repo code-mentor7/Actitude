@@ -4,6 +4,7 @@ import {HomeComponent} from '../pages/home/home.component';
 import {MenuComponent} from '../pages/menu/menu.component';
 import {LoginComponent} from '../pages/login/login.component';
 import {InterestComponent} from '../pages/interest/interest.component';
+import {SignupComponent} from '../pages/signup/signup.component';
 
 const routes: Routes = [
   // { path: 'actitude', redirectTo: 'actitude/home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'menu', component: MenuComponent, data: { title: 'Menu' } },
   { path: 'login', component: LoginComponent, data: { title: 'Login' } },
   { path: 'interest', component: InterestComponent, data: { title: 'Choose Interest' } },
+  { path: 'signup', component: SignupComponent, data: { title: 'Sign Up' } },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 

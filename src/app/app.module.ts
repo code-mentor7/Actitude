@@ -26,6 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { InterestComponent } from './pages/interest/interest.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 export function HttpLoaderFactory(http: Http) {
     return new TranslateHttpLoader(http);
@@ -39,7 +40,8 @@ export function HttpLoaderFactory(http: Http) {
     FooterComponent,
     LoginComponent,
     HeaderComponent,
-    InterestComponent
+    InterestComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
