@@ -25,6 +25,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
+import { InterestComponent } from './pages/interest/interest.component';
 
 export function HttpLoaderFactory(http: Http) {
     return new TranslateHttpLoader(http);
@@ -37,7 +38,8 @@ export function HttpLoaderFactory(http: Http) {
     MenuComponent,
     FooterComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    InterestComponent
   ],
   imports: [
     BrowserModule,
