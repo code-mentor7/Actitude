@@ -1,17 +1,22 @@
-<div class="container" style="background-color: white; max-width: 75%;">
+<div *ngIf="!showMenu" class="container" style="background-color: white; max-width: 75%;">
   <div class="row header-part">
     <div class="col-sm-3">
-      <h1 class="logo" style="margin: 0!important;">{{ 'ACTITUDE' }}</h1>
+      <h1 class="logo" style="margin: 0!important;" (click)="goHome()">{{ 'ACTITUDE' }}</h1>
     </div>
     <div class="col-sm-8">
 
     </div>
     <div class="col-sm-1">
       <button class="navbar-toggler" type="button" style="float: right;">
-        <img src="../../../assets/img/Menu.png"/>
+        <img src="../../../assets/img/Menu.png" (click)="goMenu()"/>
       </button>
     </div>
   </div>
   <div class="divide" style="padding-bottom: 30px;"></div>
   <div class="divide"></div>
 </div>
+<app-menu *ngIf="showMenu"
+          (dismiss)="onCancel()"
+>
+
+</app-menu>

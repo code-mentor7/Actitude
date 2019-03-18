@@ -37,6 +37,7 @@ body
   opacity: 100%;
   padding: 10px;
   letter-spacing: 3px;
+  color: #103E51;
 }
 
 .h3_dark {
@@ -48,7 +49,7 @@ body
 .btn-info {
   background-color: #2A9FD8!important;
   border-radius: 60px;
-  color: #103E51;
+  color: #AFD8EA;
   padding: 20px!important;
 }
 
@@ -59,7 +60,7 @@ body
   padding: 20px!important;
   border: none;
   width: 400px;
-  height: 100px;
+  height: 80px;
 }
 
 ::placeholder {
