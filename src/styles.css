@@ -71,6 +71,21 @@ body
   height: 80px;
 }
 
+.category {
+  border-radius: 60px;
+  background-color: #F3F3F3!important;
+  border: none;
+  height: 30px!important;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.category-label {
+  font-family: robotoslab-bold;
+  font-size: 13px;
+  color: #103E51;
+}
+
 ::placeholder {
   color: #103E51;
   font-family: 'roboto-bold';
@@ -109,6 +124,10 @@ body
   border-bottom: 4px solid #2A9FD8;
   display: inline-block;
   line-height: 1.5;
+}
+
+.unset-underline {
+  border-bottom: 4px solid #F3F3F3;
 }
 
 
