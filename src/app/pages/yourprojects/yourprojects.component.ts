@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-yourprojects',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class YourprojectsComponent implements OnInit {
 
-  constructor() { }
+  list = [
+    {name: 'Hello'},
+    {name: 'Hello'}
+  ]
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goAllProjects() {
+    this.router.navigate(['all']);
   }
 
 }

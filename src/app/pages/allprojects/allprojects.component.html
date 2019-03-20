@@ -3,7 +3,7 @@
 <div class="container main-panel" style="background-color: white;">
   <div class="row">
     <a class="h2_black col-sm-3" style="text-align: left;"><span class="underline">{{ 'All projects' }}</span></a>
-    <a class="h2_black col-sm-3" style="text-align: left;"><span class="unset-underline">{{ 'Your projects' }}</span></a>
+    <a class="h2_black col-sm-3" style="text-align: left;"><span class="unset-underline" (click)="goYourProjects()">{{ 'Your projects' }}</span></a>
     <div class="col-sm-6 category-head">
       <button class="category category-btn" disabled>
         <span class="category-label">{{ 'Age: 0-20' }}</span>
@@ -54,7 +54,7 @@
     </div>
   </div>
   <div class="row" style="padding-top: 70px; padding-bottom: 100px;">
-    <button class="category category-btn" disabled="disabled" style="margin: auto"><span class="category-label load_btn">{{ 'Load more' }}</span></button>
+    <button class="category category-btn" disabled="disabled" style="margin: auto; border: 2px solid #2A9FD8!important;"><span class="category-label load_btn">{{ 'Load more' }}</span></button>
   </div>
 </div>
 
