@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllprojectsComponent implements OnInit {
 
+  list = [
+    {name: 'Hello'},
+    {name: 'Hello'},
+    {name: 'Hello'},
+    {name: 'Hello'},
+    {name: 'Hello'}
+  ]
   constructor() { }
 
   ngOnInit() {

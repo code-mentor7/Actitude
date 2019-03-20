@@ -1,3 +1,12 @@
 ::placeholder {
   font-size: 15px;
 }
+
+img {
+  object-fit: cover;
+}
+
+p {
+  font-family: roboto-bold;
+  margin-bottom: 0!important;
+}

@@ -4,13 +4,42 @@
   <div class="row">
     <a class="h2_black col-sm-3" style="text-align: left;"><span class="underline">{{ 'All projects' }}</span></a>
     <a class="h2_black col-sm-3" style="text-align: left;"><span class="unset-underline">{{ 'Your projects' }}</span></a>
-    <button class="category col-sm-1" disabled><span class="category-label">{{ 'Age: 0-20' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
-    <button class="category col-sm-1" disabled><span class="category-label">{{ 'Middle east' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
-    <button class="category col-sm-1" disabled><span class="category-label">{{ 'Education' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
-    <button class="category col-sm-1" disabled><span class="category-label">{{ 'All genders' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
+    <button class="category category-btn col-sm-1" disabled><span class="category-label">{{ 'Age: 0-20' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
+    <button class="category category-btn col-sm-1" disabled><span class="category-label">{{ 'Middle east' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
+    <button class="category category-btn col-sm-1" disabled><span class="category-label">{{ 'Education' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
+    <button class="category category-btn col-sm-1" disabled><span class="category-label">{{ 'All genders' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
   </div>
-  <div class="row">
-
+  <div *ngFor="let l of list" class="row project-card">
+    <img src="../../../assets/img/beautiful_scenery.jpg" class="col-sm-4" height="220">
+    <div class="col-sm-8">
+      <div class="col-sm-12">
+        <p class="h2_black">{{ 'Improving Education' }}</p>
+      </div>
+      <div class="col-sm-12">
+        <p class="project-description">{{ 'in existing schools for children in less privileged areas of the world and also the help...' | slice: 0:65 }}{{ '...' }}</p>
+      </div>
+      <div class="col-sm-12">
+        <div class="row">
+        <div class="col-sm-2">
+          <button class="category category-btn" disabled><span class="category-label1">{{ 'Women' }}</span></button>
+        </div>
+        <div class="col-sm-3">
+          <button class="category category-btn" disabled><span class="category-label1">{{ 'Age 14-40' }}</span></button>
+        </div>
+        <div class="col-sm-4">
+          <button class="category category-btn" disabled><span class="category-label1">{{ 'Jordan,Israel,Lebanon,Palestine(+5)' }}</span></button>
+        </div>
+        <div class="col-sm-3 button-group" style="text-align: right!important; display: flex; position: relative">
+          <div style="flex: 1"></div>
+          <button class="ready-btn"></button>
+          <span class="category-label1">{{ 'Ready' }}</span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="padding-top: 70px; padding-bottom: 100px;">
+    <button class="category category-btn" disabled="disabled" style="margin: auto"><span class="category-label load_btn">{{ 'Load more' }}</span></button>
   </div>
 </div>
 
