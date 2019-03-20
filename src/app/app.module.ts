@@ -28,6 +28,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { InterestComponent } from './pages/interest/interest.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { AllprojectsComponent } from './pages/allprojects/allprojects.component';
+import { YourprojectsComponent } from './pages/yourprojects/yourprojects.component';
 
 export function HttpLoaderFactory(http: Http) {
     return new TranslateHttpLoader(http);
@@ -43,7 +44,8 @@ export function HttpLoaderFactory(http: Http) {
     HeaderComponent,
     InterestComponent,
     SignupComponent,
-    AllprojectsComponent
+    AllprojectsComponent,
+    YourprojectsComponent
   ],
   imports: [
     BrowserModule,
