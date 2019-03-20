@@ -260,3 +260,20 @@ body
   right: 0!important;
   font-size: 15px;
 }
+
+.category-head {
+  display: flex;
+  position: relative
+}
+.category-head>button {
+  padding: 0!important;
+  flex: 1;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.category-head>button>img {
+  margin-left: 15px;
+}
+

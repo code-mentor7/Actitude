@@ -4,10 +4,25 @@
   <div class="row">
     <a class="h2_black col-sm-3" style="text-align: left;"><span class="underline">{{ 'All projects' }}</span></a>
     <a class="h2_black col-sm-3" style="text-align: left;"><span class="unset-underline">{{ 'Your projects' }}</span></a>
-    <button class="category category-btn col-sm-1" disabled><span class="category-label">{{ 'Age: 0-20' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
-    <button class="category category-btn col-sm-1" disabled><span class="category-label">{{ 'Middle east' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
-    <button class="category category-btn col-sm-1" disabled><span class="category-label">{{ 'Education' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
-    <button class="category category-btn col-sm-1" disabled><span class="category-label">{{ 'All genders' }}</span><img style="text-align: right" src="../../../assets/img/Triangle.png"></button>
+    <div class="col-sm-6 category-head">
+      <button class="category category-btn" disabled>
+        <span class="category-label">{{ 'Age: 0-20' }}</span>
+        <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
+      </button>
+      <button class="category category-btn" disabled>
+        <span class="category-label">{{ 'Middle east' }}</span>
+        <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
+      </button>
+      <button class="category category-btn" disabled>
+        <span class="category-label">{{ 'Education' }}</span>
+        <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
+      </button>
+      <button class="category category-btn" disabled>
+        <span class="category-label">{{ 'All genders' }}</span>
+        <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
+      </button>
+    </div>
+
   </div>
   <div *ngFor="let l of list" class="row project-card">
     <img src="../../../assets/img/beautiful_scenery.jpg" class="col-sm-4" height="220">
