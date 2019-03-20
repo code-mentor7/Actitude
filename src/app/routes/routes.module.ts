@@ -7,6 +7,7 @@ import {InterestComponent} from '../pages/interest/interest.component';
 import {SignupComponent} from '../pages/signup/signup.component';
 import {AllprojectsComponent} from '../pages/allprojects/allprojects.component';
 import {YourprojectsComponent} from '../pages/yourprojects/yourprojects.component';
+import {CreateprojectComponent} from '../pages/createproject/createproject.component';
 
 const routes: Routes = [
   // { path: 'actitude', redirectTo: 'actitude/home', pathMatch: 'full' },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent, data: { title: 'Sign Up' } },
   { path: 'all', component: AllprojectsComponent, data: { title: 'All Projects' } },
   { path: 'your', component: YourprojectsComponent, data: { title: 'Your Projects' } },
+  { path: 'create', component: CreateprojectComponent, data: { title: 'Project Create' } },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 

@@ -290,3 +290,7 @@ body
   transform: translateY(-50%);
 
 }
+
+button {
+  cursor: pointer;
+}
