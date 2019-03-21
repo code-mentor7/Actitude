@@ -61,6 +61,12 @@ body
   padding: 20px!important;
 }
 
+.save_project_btn {
+  border-radius: 60px;
+  background-color: #AFD8EA;
+  padding: 15px 80px!important;
+}
+
 .input-info {
   background-color: #F3F3F3;
   border-radius: 60px;

@@ -21,3 +21,10 @@
   border-top: 3px solid #F3F3F3;
   padding: 30px 10px;
 }
+
+img {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  right: 15px;
+}
