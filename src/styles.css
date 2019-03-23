@@ -321,3 +321,8 @@ button {
   border-top: 3px solid #F3F3F3;
   padding: 30px 10px;
 }
+
+.detail-body {
+  border-top: 3px solid #F3F3F3;
+  padding: 10px 10px;
+}
