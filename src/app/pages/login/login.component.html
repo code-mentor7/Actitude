@@ -12,7 +12,7 @@
       <input name="password" type="password" class="input-info" placeholder="{{ 'Password' }}" [(ngModel)]="password">
     </div>
     <div class="form-group text-center">
-      <button type="submit" class="btn btn-info login-btn"><h4 class="h4_dark">{{ 'Login' }}</h4></button>
+      <button type="submit" class="btn btn-info login-btn" (click)="goMyProject()"><h4 class="h4_dark">{{ 'Login' }}</h4></button>
     </div>
   </form>
   <div class="text-center row" style="padding-top: 40px;">

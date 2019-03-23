@@ -55,7 +55,7 @@ body
 }
 
 .btn-info {
-  background-color: #2A9FD8!important;
+  background-color: #AFD8EA!important;
   border-radius: 60px;
   color: #AFD8EA;
   padding: 20px!important;
@@ -162,7 +162,7 @@ body
 }
 
 .underline {
-  border-bottom: 4px solid #2A9FD8;
+  border-bottom: 4px solid #AFD8EA;
   display: inline-block;
   line-height: 1.5;
 }
