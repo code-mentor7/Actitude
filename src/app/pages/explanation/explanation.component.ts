@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-explanation',
@@ -8,13 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class ExplanationComponent implements OnInit {
 
   showMenu = false;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   goMenu() {
     this.showMenu = true;
+  }
+
+  goSignUp() {
+    this.router.navigate(['signup']);
   }
 
   closeMenu() {

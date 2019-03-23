@@ -9,22 +9,50 @@
     <div style="text-align: center; padding-bottom: 70px;">
       <h1 class="h1_dark">{{ 'Would you rather work with...?' }}</h1>
     </div>
-    <div class="row" style="margin: unset;">
-        <div class="col-sm-5 img-div">
+    <div style="cursor: pointer" (click)="goSignUp()">
+      <div class="row text-center" style="margin: unset;">
+          <div class="col-sm-5 img-div">
+            <img src="../../../assets/img/beautiful_scenery.jpg" height="200" style="width: 100%;">
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'sustainable consumption' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'clean oceans' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'plastic soup' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'river pollution' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'plastic soup' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'river pollution' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'clean oceans' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'clean drinking water' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'clean oceans' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'plastic soup' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'river pollution' }}</span></button>
+          </div>
 
-        </div>
+          <div class="col-sm-2 text-center">
+            <h1 class="h1_dark" style="position: relative; top: 50%;transform: translateY(-50%);">{{ 'or' }}</h1>
+          </div>
 
-        <div class="col-sm-2 text-center">
-          <h1 class="h1_dark" style="position: relative; top: 50%;transform: translateY(-50%);">{{ 'or' }}</h1>
-        </div>
-
-        <div class="col-sm-5 img-div">
-
-        </div>
-    </div>
-    <div class="row" style="padding-top: 50px;">
-      <button type="button" class="btn explain_btn" style="margin: auto; margin-right: 10px"><h4 class="h4_dark">{{ 'Both' }}</h4></button>
-      <button type="button" class="btn explain_btn" style="margin: auto; margin-left: 50px;"><h4 class="h4_dark">{{ 'Neither' }}</h4></button>
+          <div class="col-sm-5 img-div">
+            <img src="../../../assets/img/beautiful_scenery.jpg" height="200" style="width: 100%;">
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'clean oceans' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'plastic soup' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'river pollution' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'clean oceans' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'plastic soup' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'river pollution' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'plastic soup' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'river pollution' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'clean oceans' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'clean drinking water' }}</span></button>
+            <button class="category ex-sub-btn" disabled><span class="category-label1">{{ 'sustainable consumption' }}</span></button>
+          </div>
+      </div>
+      <div class="row" style="padding-top: 50px;">
+        <button type="button" class="btn explain_btn" style="margin: auto; margin-right: 10px"><h4 class="h4_dark">{{ 'Both' }}</h4></button>
+        <button type="button" class="btn explain_btn" style="margin: auto; margin-left: 50px;"><h4 class="h4_dark">{{ 'Neither' }}</h4></button>
+      </div>
+      <div class="row" style="padding-top: 50px;">
+        <button type="button" class="btn explain_last_btn1"></button>
+        <button type="button" class="btn explain_last_btn2"></button>
+      </div>
     </div>
   </div>
 
