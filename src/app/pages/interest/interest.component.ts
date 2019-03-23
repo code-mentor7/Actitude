@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-interest',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class InterestComponent implements OnInit {
 
   showMenu = false;
-  constructor() { }
+  constructor(private router: Router) { }
 
   goMenu() {
     this.showMenu = true;
@@ -16,6 +17,10 @@ export class InterestComponent implements OnInit {
 
   closeMenu() {
     this.showMenu = false;
+  }
+
+  goExplanation() {
+    this.router.navigate(['explanation']);
   }
 
   ngOnInit() {

@@ -1,0 +1,12 @@
+<app-header [flag]="'other'"
+            (triggerShowMenu)="goMenu()"
+            (triggerCloseMenu)="closeMenu()"
+>
+</app-header>
+
+<div *ngIf="!showMenu">
+  <div class="container main-panel" style="background-color: white;">
+  </div>
+
+  <app-footer></app-footer>
+</div>

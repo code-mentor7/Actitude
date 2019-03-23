@@ -9,6 +9,7 @@ import {AllprojectsComponent} from '../pages/allprojects/allprojects.component';
 import {YourprojectsComponent} from '../pages/yourprojects/yourprojects.component';
 import {CreateprojectComponent} from '../pages/createproject/createproject.component';
 import {ProjectdetailComponent} from '../pages/projectdetail/projectdetail.component';
+import {ExplanationComponent} from '../pages/explanation/explanation.component';
 
 const routes: Routes = [
   // { path: 'actitude', redirectTo: 'actitude/home', pathMatch: 'full' },
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'your', component: YourprojectsComponent, data: { title: 'Your Projects' } },
   { path: 'create', component: CreateprojectComponent, data: { title: 'Project Create' } },
   { path: 'detail', component: ProjectdetailComponent, data: { title: 'Project Details' } },
+  { path: 'explanation', component: ExplanationComponent, data: { title: 'Explanation' } },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
