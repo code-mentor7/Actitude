@@ -161,6 +161,25 @@ body
   cursor: pointer;
 }
 
+.detail-titles {
+  font-family: roboto-bold;
+  color: #103E51;
+  font-size: 20px;
+  text-shadow: #000000;
+  opacity: 100%;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+.detail-description {
+  font-family: roboto-bold;
+  color: #103E51;
+  font-size: 17px;
+  text-shadow: #000000;
+  opacity: 100%;
+  letter-spacing: 2px;
+}
+
 .underline {
   border-bottom: 4px solid #AFD8EA;
   display: inline-block;
