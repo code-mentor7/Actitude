@@ -310,3 +310,14 @@ body
 button {
   cursor: pointer;
 }
+
+.photo-div {
+  background-color: #F3F3F3;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.create-body {
+  border-top: 3px solid #F3F3F3;
+  padding: 30px 10px;
+}
