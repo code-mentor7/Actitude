@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
 
   showMenu = false;
   @Input() flag;
+  @Output() triggerShowMenu = new EventEmitter();
+  @Output() triggerCloseMenu = new EventEmitter();
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -20,6 +22,7 @@ export class HeaderComponent implements OnInit {
   }
 
   goMenu() {
+    this.triggerShowMenu.emit();
     this.showMenu = true;
   }
 
@@ -28,6 +31,7 @@ export class HeaderComponent implements OnInit {
   }
 
   onCancel() {
+    this.triggerCloseMenu.emit();
     this.showMenu = false;
   }
 

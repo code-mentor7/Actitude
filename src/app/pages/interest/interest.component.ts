@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterestComponent implements OnInit {
 
+  showMenu = false;
   constructor() { }
+
+  goMenu() {
+    this.showMenu = true;
+  }
+
+  closeMenu() {
+    this.showMenu = false;
+  }
 
   ngOnInit() {
   }
