@@ -8,9 +8,18 @@ import {Router} from '@angular/router';
 })
 export class CreateprojectComponent implements OnInit {
 
+  showMenu = false;
   constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goMenu() {
+    this.showMenu = true;
+  }
+
+  closeMenu() {
+    this.showMenu = false;
   }
 
   goMyProject() {

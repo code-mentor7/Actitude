@@ -14,10 +14,19 @@ export class AllprojectsComponent implements OnInit {
     {name: 'Hello'},
     {name: 'Hello'},
     {name: 'Hello'}
-  ]
+  ];
+  showMenu = false;
   constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goMenu() {
+    this.showMenu = true;
+  }
+
+  closeMenu() {
+    this.showMenu = false;
   }
 
   goYourProjects() {

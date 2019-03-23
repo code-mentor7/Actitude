@@ -11,10 +11,19 @@ export class YourprojectsComponent implements OnInit {
   list = [
     {name: 'Hello'},
     {name: 'Hello'}
-  ]
+  ];
+  showMenu = false;
   constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goMenu() {
+    this.showMenu = true;
+  }
+
+  closeMenu() {
+    this.showMenu = false;
   }
 
   goAllProjects() {

@@ -10,6 +10,7 @@ export class LoginComponent implements OnInit {
 
   email = '';
   password = '';
+  showMenu = false;
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -21,6 +22,14 @@ export class LoginComponent implements OnInit {
 
   goMyProject() {
     this.router.navigate(['your']);
+  }
+
+  goMenu() {
+    this.showMenu = true;
+  }
+
+  closeMenu() {
+    this.showMenu = false;
   }
 
   onSubmit() {

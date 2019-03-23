@@ -10,9 +10,18 @@ export class SignupComponent implements OnInit {
 
   email = '';
   password = '';
+  showMenu = false;
   constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goMenu() {
+    this.showMenu = true;
+  }
+
+  closeMenu() {
+    this.showMenu = false;
   }
 
   goAllProject() {

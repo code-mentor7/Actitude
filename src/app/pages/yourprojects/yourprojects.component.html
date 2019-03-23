@@ -1,45 +1,51 @@
-<app-header [flag]="'projects'"></app-header>
+<app-header [flag]="'other'"
+            (triggerShowMenu)="goMenu()"
+            (triggerCloseMenu)="closeMenu()"
+>
+</app-header>
 
-<div class="container main-panel" style="background-color: white;">
-  <div class="row">
-    <a class="h2_black col-sm-3" style="text-align: left;"><span class="unset-underline" (click)="goAllProjects()">{{ 'All projects' }}</span></a>
-    <a class="h2_black col-sm-3" style="text-align: left;"><span class="underline">{{ 'Your projects' }}</span></a>
-    <div class="offset-sm-3 col-sm-3 yourproject-head">
-      <button class="category category-btn text-center" style="border: 2px solid #AFD8EA!important; height: unset!important;" disabled>
-        <span class="category-label" style="font-size: 20px;" (click)="goCreateProject()">{{ 'Create project' }}</span>
-      </button>
+<div *ngIf="!showMenu">
+  <div class="container main-panel" style="background-color: white;">
+    <div class="row">
+      <a class="h2_black col-sm-3" style="text-align: left;"><span class="unset-underline" (click)="goAllProjects()">{{ 'All projects' }}</span></a>
+      <a class="h2_black col-sm-3" style="text-align: left;"><span class="underline">{{ 'Your projects' }}</span></a>
+      <div class="offset-sm-3 col-sm-3 yourproject-head">
+        <button class="category category-btn text-center" style="border: 2px solid #AFD8EA!important; height: unset!important;" disabled>
+          <span class="category-label" style="font-size: 20px;" (click)="goCreateProject()">{{ 'Create project' }}</span>
+        </button>
+      </div>
+
     </div>
-
-  </div>
-  <div *ngFor="let l of list" class="row project-card">
-    <img src="../../../assets/img/beautiful_scenery.jpg" class="col-sm-4" height="220">
-    <div class="col-sm-8">
-      <div class="col-sm-12">
-        <p class="h2_black">{{ 'Improving Education' }}</p>
-      </div>
-      <div class="col-sm-12">
-        <p class="project-description">{{ 'in existing schools for children in less privileged areas of the world and also the help...' | slice: 0:65 }}{{ '...' }}</p>
-      </div>
-      <div class="col-sm-12">
-        <div class="row">
-          <div class="col-sm-2">
-            <button class="category category-btn" disabled><span class="category-label1">{{ 'Women' }}</span></button>
-          </div>
-          <div class="col-sm-3">
-            <button class="category category-btn" disabled><span class="category-label1">{{ 'Age 14-40' }}</span></button>
-          </div>
-          <div class="col-sm-4">
-            <button class="category category-btn" disabled><span class="category-label1">{{ 'Jordan,Israel,Lebanon,Palestine(+5)' }}</span></button>
-          </div>
-          <div class="col-sm-3 button-group" style="text-align: right!important; display: flex; position: relative">
-            <div style="flex: 1"></div>
-            <button class="ready-btn"></button>
-            <span class="category-label1">{{ 'Ready' }}</span>
+    <div *ngFor="let l of list" class="row project-card">
+      <img src="../../../assets/img/beautiful_scenery.jpg" class="col-sm-4" height="220">
+      <div class="col-sm-8">
+        <div class="col-sm-12">
+          <p class="h2_black">{{ 'Improving Education' }}</p>
+        </div>
+        <div class="col-sm-12">
+          <p class="project-description">{{ 'in existing schools for children in less privileged areas of the world and also the help...' | slice: 0:65 }}{{ '...' }}</p>
+        </div>
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-2">
+              <button class="category category-btn" disabled><span class="category-label1">{{ 'Women' }}</span></button>
+            </div>
+            <div class="col-sm-3">
+              <button class="category category-btn" disabled><span class="category-label1">{{ 'Age 14-40' }}</span></button>
+            </div>
+            <div class="col-sm-4">
+              <button class="category category-btn" disabled><span class="category-label1">{{ 'Jordan,Israel,Lebanon,Palestine(+5)' }}</span></button>
+            </div>
+            <div class="col-sm-3 button-group" style="text-align: right!important; display: flex; position: relative">
+              <div style="flex: 1"></div>
+              <button class="ready-btn"></button>
+              <span class="category-label1">{{ 'Ready' }}</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<app-footer></app-footer>
+  <app-footer></app-footer>
+</div>

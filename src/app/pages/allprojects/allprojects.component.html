@@ -1,61 +1,67 @@
-<app-header [flag]="'projects'"></app-header>
+<app-header [flag]="'other'"
+            (triggerShowMenu)="goMenu()"
+            (triggerCloseMenu)="closeMenu()"
+>
+</app-header>
 
-<div class="container main-panel" style="background-color: white;">
-  <div class="row">
-    <a class="h2_black col-sm-3" style="text-align: left;"><span class="underline">{{ 'All projects' }}</span></a>
-    <a class="h2_black col-sm-3" style="text-align: left;"><span class="unset-underline" (click)="goYourProjects()">{{ 'Your projects' }}</span></a>
-    <div class="col-sm-6 category-head">
-      <button class="category category-btn" disabled>
-        <span class="category-label">{{ 'Age: 0-20' }}</span>
-        <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
-      </button>
-      <button class="category category-btn" disabled>
-        <span class="category-label">{{ 'Middle east' }}</span>
-        <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
-      </button>
-      <button class="category category-btn" disabled>
-        <span class="category-label">{{ 'Education' }}</span>
-        <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
-      </button>
-      <button class="category category-btn" disabled>
-        <span class="category-label">{{ 'All genders' }}</span>
-        <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
-      </button>
-    </div>
+<div *ngIf="!showMenu">
+  <div class="container main-panel" style="background-color: white;">
+    <div class="row">
+      <a class="h2_black col-sm-3" style="text-align: left;"><span class="underline">{{ 'All projects' }}</span></a>
+      <a class="h2_black col-sm-3" style="text-align: left;"><span class="unset-underline" (click)="goYourProjects()">{{ 'Your projects' }}</span></a>
+      <div class="col-sm-6 category-head">
+        <button class="category category-btn" disabled>
+          <span class="category-label">{{ 'Age: 0-20' }}</span>
+          <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
+        </button>
+        <button class="category category-btn" disabled>
+          <span class="category-label">{{ 'Middle east' }}</span>
+          <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
+        </button>
+        <button class="category category-btn" disabled>
+          <span class="category-label">{{ 'Education' }}</span>
+          <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
+        </button>
+        <button class="category category-btn" disabled>
+          <span class="category-label">{{ 'All genders' }}</span>
+          <img style="vertical-align: middle" src="../../../assets/img/Triangle.png">
+        </button>
+      </div>
 
-  </div>
-  <div *ngFor="let l of list" class="row project-card">
-    <img src="../../../assets/img/beautiful_scenery.jpg" class="col-sm-4" height="220">
-    <div class="col-sm-8">
-      <div class="col-sm-12">
-        <p class="h2_black">{{ 'Improving Education' }}</p>
-      </div>
-      <div class="col-sm-12">
-        <p class="project-description">{{ 'in existing schools for children in less privileged areas of the world and also the help...' | slice: 0:65 }}{{ '...' }}</p>
-      </div>
-      <div class="col-sm-12">
-        <div class="row">
-        <div class="col-sm-2">
-          <button class="category category-btn" disabled><span class="category-label1">{{ 'Women' }}</span></button>
+    </div>
+    <div *ngFor="let l of list" class="row project-card">
+      <img src="../../../assets/img/beautiful_scenery.jpg" class="col-sm-4" height="220">
+      <div class="col-sm-8">
+        <div class="col-sm-12">
+          <p class="h2_black">{{ 'Improving Education' }}</p>
         </div>
-        <div class="col-sm-3">
-          <button class="category category-btn" disabled><span class="category-label1">{{ 'Age 14-40' }}</span></button>
+        <div class="col-sm-12">
+          <p class="project-description">{{ 'in existing schools for children in less privileged areas of the world and also the help...' | slice: 0:65 }}{{ '...' }}</p>
         </div>
-        <div class="col-sm-4">
-          <button class="category category-btn" disabled><span class="category-label1">{{ 'Jordan,Israel,Lebanon,Palestine(+5)' }}</span></button>
-        </div>
-        <div class="col-sm-3 button-group" style="text-align: right!important; display: flex; position: relative">
-          <div style="flex: 1"></div>
-          <button class="ready-btn"></button>
-          <span class="category-label1">{{ 'Ready' }}</span>
-        </div>
+        <div class="col-sm-12">
+          <div class="row">
+          <div class="col-sm-2">
+            <button class="category category-btn" disabled><span class="category-label1">{{ 'Women' }}</span></button>
+          </div>
+          <div class="col-sm-3">
+            <button class="category category-btn" disabled><span class="category-label1">{{ 'Age 14-40' }}</span></button>
+          </div>
+          <div class="col-sm-4">
+            <button class="category category-btn" disabled><span class="category-label1">{{ 'Jordan,Israel,Lebanon,Palestine(+5)' }}</span></button>
+          </div>
+          <div class="col-sm-3 button-group" style="text-align: right!important; display: flex; position: relative">
+            <div style="flex: 1"></div>
+            <button class="ready-btn"></button>
+            <span class="category-label1">{{ 'Ready' }}</span>
+          </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="row" style="padding-top: 70px; padding-bottom: 100px;">
+      <button class="category category-btn" disabled="disabled" style="margin: auto; border: 2px solid #AFD8EA!important;"><span class="category-label load_btn">{{ 'Load more' }}</span></button>
+    </div>
   </div>
-  <div class="row" style="padding-top: 70px; padding-bottom: 100px;">
-    <button class="category category-btn" disabled="disabled" style="margin: auto; border: 2px solid #AFD8EA!important;"><span class="category-label load_btn">{{ 'Load more' }}</span></button>
-  </div>
+
+  <app-footer></app-footer>
 </div>
-
-<app-footer></app-footer>
