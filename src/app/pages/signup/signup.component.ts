@@ -15,6 +15,10 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
   }
 
+  goAllProject() {
+    this.router.navigate(['all']);
+  }
+
   onSubmit() {
 
   }
