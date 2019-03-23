@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   constructor(private api: ApiService, private router: Router ) { }
 
   ngOnInit() {
-    this.api.getBackgroudImage.get().promise()
+    this.api.getBackgroundImage.get().promise()
       .then((res) => console.log('success', res))
       .catch((e) => console.log(e.error));
   }

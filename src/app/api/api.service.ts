@@ -7,7 +7,7 @@ import * as _ from 'lodash';
 @Injectable()
 export class ApiService {
 
-  getBackgroudImage = {
+  getBackgroundImage = {
     get: () => this.request
       .get()
       .url('/api/GetImagePath')
