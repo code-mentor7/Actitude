@@ -33,4 +33,8 @@ export class AllprojectsComponent implements OnInit {
     this.router.navigate(['your']);
   }
 
+  goDetail() {
+    this.router.navigate(['detail']);
+  }
+
 }

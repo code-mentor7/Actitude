@@ -34,4 +34,8 @@ export class YourprojectsComponent implements OnInit {
     this.router.navigate(['create']);
   }
 
+  goDetail() {
+    this.router.navigate(['detail']);
+  }
+
 }
