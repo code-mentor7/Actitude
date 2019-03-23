@@ -30,6 +30,12 @@ body
   font-size: 50px;
 }
 
+.h1_dark {
+  font-family: 'robotoslab-bold';
+  color: #103E51;
+  font-size: 65px;
+}
+
 .h4_dark {
   font-family: 'robotoslab-bold';
   font-size: 25px;
@@ -65,6 +71,12 @@ body
   border-radius: 60px;
   background-color: #AFD8EA;
   padding: 15px 80px!important;
+}
+
+.explain_btn {
+  border-radius: 60px;
+  background-color: #AFD8EA;
+  padding: 0 50px!important;
 }
 
 .input-info {
