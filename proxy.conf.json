@@ -2,6 +2,7 @@
   "/api": {
     "target": "http://36.it-hotellet.dk/ActitudeRest/ServerActitudeRest.dll",
     "secure": false,
-    "changeOrigin": true
+    "changeOrigin": true,
+    "pathRewrite": {"^/api" : ""}
   }
 }
