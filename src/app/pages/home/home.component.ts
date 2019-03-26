@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
   }
 
   goAllProjects() {
-    this.router.navigate(['all']);
+    this.router.navigate(['actitude/all']);
   }
 
   onCancel() {

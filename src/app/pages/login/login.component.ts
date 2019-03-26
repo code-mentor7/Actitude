@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   }
 
   goMyProject() {
-    this.router.navigate(['your']);
+    this.router.navigate(['actitude/your']);
   }
 
   goMenu() {

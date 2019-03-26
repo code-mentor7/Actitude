@@ -27,15 +27,15 @@ export class YourprojectsComponent implements OnInit {
   }
 
   goAllProjects() {
-    this.router.navigate(['all']);
+    this.router.navigate(['actitude/all']);
   }
 
   goCreateProject() {
-    this.router.navigate(['create']);
+    this.router.navigate(['actitude/create']);
   }
 
   goDetail() {
-    this.router.navigate(['detail']);
+    this.router.navigate(['actitude/detail']);
   }
 
 }

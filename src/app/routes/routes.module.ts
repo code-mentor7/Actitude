@@ -26,18 +26,17 @@ const routes: Routes = [
     path: 'actitude',
     canActivate: [AuthGuardService],
     children: [
-      { path: 'your', component: YourprojectsComponent, data: { title: 'Your Projects' } }
+      { path: 'your', component: YourprojectsComponent, data: { title: 'Your Projects' } },
+      { path: 'all', component: AllprojectsComponent, data: { title: 'All Projects' } },
+      { path: 'create', component: CreateprojectComponent, data: { title: 'Project Create' } },
+      { path: 'detail', component: ProjectdetailComponent, data: { title: 'Project Details' } },
     ]
-
   },
-  { path: 'menu', component: MenuComponent, data: { title: 'Menu' } },
   { path: 'login', component: LoginComponent, data: { title: 'Login' } },
+  { path: 'menu', component: MenuComponent, data: { title: 'Menu' } },
+  { path: 'explanation', component: ExplanationComponent, data: { title: 'Explanation' } },
   { path: 'interest', component: InterestComponent, data: { title: 'Choose Interest' } },
   { path: 'signup', component: SignupComponent, data: { title: 'Sign Up' } },
-  { path: 'all', component: AllprojectsComponent, data: { title: 'All Projects' } },
-  { path: 'create', component: CreateprojectComponent, data: { title: 'Project Create' } },
-  { path: 'detail', component: ProjectdetailComponent, data: { title: 'Project Details' } },
-  { path: 'explanation', component: ExplanationComponent, data: { title: 'Explanation' } },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 

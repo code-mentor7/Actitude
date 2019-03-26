@@ -30,11 +30,11 @@ export class AllprojectsComponent implements OnInit {
   }
 
   goYourProjects() {
-    this.router.navigate(['your']);
+    this.router.navigate(['actitude/your']);
   }
 
   goDetail() {
-    this.router.navigate(['detail']);
+    this.router.navigate(['actitude/detail']);
   }
 
 }

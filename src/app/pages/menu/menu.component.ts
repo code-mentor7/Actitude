@@ -16,7 +16,7 @@ export class MenuComponent implements OnInit {
   }
 
   goAllProjects() {
-    this.router.navigate(['all']);
+    this.router.navigate(['actitude/all']);
   }
 
   goSignUp() {

@@ -25,7 +25,7 @@ export class SignupComponent implements OnInit {
   }
 
   goAllProject() {
-    this.router.navigate(['all']);
+    this.router.navigate(['actitude/all']);
   }
 
   onSubmit() {
