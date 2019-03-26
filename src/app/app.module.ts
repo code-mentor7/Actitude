@@ -32,6 +32,7 @@ import { YourprojectsComponent } from './pages/yourprojects/yourprojects.compone
 import { CreateprojectComponent } from './pages/createproject/createproject.component';
 import { ProjectdetailComponent } from './pages/projectdetail/projectdetail.component';
 import { ExplanationComponent } from './pages/explanation/explanation.component';
+import {AuthGuardService} from './routes/guards/auth-guard.service';
 
 export function HttpLoaderFactory(http: Http) {
     return new TranslateHttpLoader(http);
@@ -78,7 +79,8 @@ export function HttpLoaderFactory(http: Http) {
     ConfService,
     ApiService,
     RequestService,
-    AuthService
+    AuthService,
+    AuthGuardService
   ],
   bootstrap: [AppComponent]
 })

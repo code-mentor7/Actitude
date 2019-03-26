@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {ApiService} from '../../api/api.service';
 import { AuthData } from '../../models/auth';
+import {AuthService} from '../../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
   password = '';
   showMenu = false;
   auth: AuthData;
-  constructor(private router: Router, private api: ApiService) { }
+  constructor(private router: Router, private api: ApiService, private authService: AuthService) { }
 
   ngOnInit() {
     this.auth = new AuthData();
@@ -45,9 +46,12 @@ export class LoginComponent implements OnInit {
       .then(rsp => {
         if (rsp.error) {
           console.log(rsp.error);
+          alert('Please try again');
         } else {
           console.log(rsp['result']);
-          this.router.navigate(['your']);
+          localStorage.setItem('token', rsp['result']);
+          this.authService.isLoggedIn();
+          this.router.navigate(['actitude/your']);
         }
       });
   }

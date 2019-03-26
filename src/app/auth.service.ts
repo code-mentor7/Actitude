@@ -5,7 +5,7 @@ import { User } from './models/user';
 
 @Injectable()
 export class AuthService {
-
+  status = false;
   constructor(private api: ApiService) { }
 
   rememberToken(token) {
@@ -16,8 +16,12 @@ export class AuthService {
     return localStorage.getItem('ix.token');
   }
 
-  canAutoLogin(): boolean {
-    return this.getToken() !== null;
+  getStatus() {
+    return this.status;
+  }
+
+  isLoggedIn() {
+    this.status = true;
   }
 
 }

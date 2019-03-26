@@ -10,6 +10,7 @@ import {YourprojectsComponent} from '../pages/yourprojects/yourprojects.componen
 import {CreateprojectComponent} from '../pages/createproject/createproject.component';
 import {ProjectdetailComponent} from '../pages/projectdetail/projectdetail.component';
 import {ExplanationComponent} from '../pages/explanation/explanation.component';
+import {AuthGuardService} from './guards/auth-guard.service';
 
 const routes: Routes = [
   // { path: 'actitude', redirectTo: 'actitude/home', pathMatch: 'full' },
@@ -21,12 +22,19 @@ const routes: Routes = [
   //   ]
   // },
   { path: 'home', component: HomeComponent, data: { title: 'Home' } },
+  {
+    path: 'actitude',
+    canActivate: [AuthGuardService],
+    children: [
+      { path: 'your', component: YourprojectsComponent, data: { title: 'Your Projects' } }
+    ]
+
+  },
   { path: 'menu', component: MenuComponent, data: { title: 'Menu' } },
   { path: 'login', component: LoginComponent, data: { title: 'Login' } },
   { path: 'interest', component: InterestComponent, data: { title: 'Choose Interest' } },
   { path: 'signup', component: SignupComponent, data: { title: 'Sign Up' } },
   { path: 'all', component: AllprojectsComponent, data: { title: 'All Projects' } },
-  { path: 'your', component: YourprojectsComponent, data: { title: 'Your Projects' } },
   { path: 'create', component: CreateprojectComponent, data: { title: 'Project Create' } },
   { path: 'detail', component: ProjectdetailComponent, data: { title: 'Project Details' } },
   { path: 'explanation', component: ExplanationComponent, data: { title: 'Explanation' } },
