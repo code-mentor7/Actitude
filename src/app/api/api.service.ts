@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { RequestService } from './request.service';
+import { AuthData } from '../models/auth';
 import * as _ from 'lodash';
 
 
@@ -11,6 +12,13 @@ export class ApiService {
     get: () => this.request
       .get()
       .url('/api/GetImagePath')
+  }
+
+  login = {
+    post: (data) => this.request
+        .post()
+        .url('/api/CreateToken')
+        .payload(data)
   }
 
   // mobikiStatistics = {
