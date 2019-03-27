@@ -21,6 +21,12 @@ export class ApiService {
         .payload(data)
   }
 
+  getAllProjects = {
+    get: () => this.request
+      .get()
+      .url('/api/ActProjects')
+  }
+
   // mobikiStatistics = {
   //   get: () => this.request
   //     .get()
