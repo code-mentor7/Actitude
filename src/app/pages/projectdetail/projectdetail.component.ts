@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import {ProjectService} from '../../service/project.service';
+import {AllProjects} from '../../models/allprojects';
 
 @Component({
   selector: 'app-projectdetail',
@@ -9,9 +11,11 @@ import {Router} from '@angular/router';
 export class ProjectdetailComponent implements OnInit {
 
   showMenu = false;
-  constructor(private router: Router) { }
+  project: AllProjects;
+  constructor(private router: Router, private pService: ProjectService) { }
 
   ngOnInit() {
+    this.project = this.pService.get();
   }
 
   goMenu() {

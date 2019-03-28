@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import { AllProjects } from '../../models/allprojects';
 import {ApiService} from '../../api/api.service';
+import {ProjectService} from '../../service/project.service';
 
 @Component({
   selector: 'app-allprojects',
@@ -18,8 +19,8 @@ export class AllprojectsComponent implements OnInit {
     {name: 'Hello'}
   ];
   showMenu = false;
-  allProjects: AllProjects[];
-  constructor(private router: Router, private api: ApiService) { }
+  allProjects: AllProjects[] = [];
+  constructor(private router: Router, private api: ApiService, private pService: ProjectService) { }
 
   ngOnInit() {
     this.api.getAllProjects.get().promise()
@@ -41,7 +42,8 @@ export class AllprojectsComponent implements OnInit {
     this.router.navigate(['actitude/your']);
   }
 
-  goDetail() {
+  goDetail(project: AllProjects) {
+    const goProject = this.pService.set(project);
     this.router.navigate(['actitude/detail']);
   }
 

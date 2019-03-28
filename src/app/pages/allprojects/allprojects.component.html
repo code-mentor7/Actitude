@@ -29,14 +29,14 @@
       </div>
 
     </div>
-    <div *ngFor="let l of list" class="row project-card" (click)="goDetail()">
-      <img src="../../../assets/img/beautiful_scenery.jpg" class="col-sm-4" height="220">
+    <div *ngFor="let ap of allProjects" class="row project-card" (click)="goDetail(ap)">
+      <img src="{{ ap.URL }}" class="col-sm-4" height="220">
       <div class="col-sm-8">
         <div class="col-sm-12">
-          <p class="h2_black">{{ 'Improving Education' }}</p>
+          <p class="h2_black">{{ ap.MainCategory }}</p>
         </div>
         <div class="col-sm-12">
-          <p class="project-description">{{ 'in existing schools for children in less privileged areas of the world and also the help...' | slice: 0:65 }}{{ '...' }}</p>
+          <p class="project-description">{{ ap.Name | slice: 0:65 }}{{ '...' }}</p>
         </div>
         <div class="col-sm-12">
           <div class="row">
@@ -59,7 +59,7 @@
       </div>
     </div>
     <div class="row" style="padding-top: 70px; padding-bottom: 100px;">
-      <button class="category category-btn" disabled="disabled" style="margin: auto; border: 2px solid #AFD8EA!important;"><span class="category-label load_btn">{{ 'Load more' }}</span></button>
+      <!--<button class="category category-btn" disabled="disabled" style="margin: auto; border: 2px solid #AFD8EA!important;"><span class="category-label load_btn">{{ 'Load more' }}</span></button>-->
     </div>
   </div>
 

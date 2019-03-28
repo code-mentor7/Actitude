@@ -25,6 +25,7 @@ export class MenuComponent implements OnInit {
 
   goLogout() {
     this.logout.emit();
+    localStorage.removeItem('token');
     this.router.navigate(['home']);
   }
 
