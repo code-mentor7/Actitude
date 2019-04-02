@@ -22,21 +22,22 @@ const routes: Routes = [
   //   ]
   // },
   { path: 'home', component: HomeComponent, data: { title: 'Home' } },
-  {
-    path: 'actitude',
-    canActivate: [AuthGuardService],
-    children: [
-      { path: 'your', component: YourprojectsComponent, data: { title: 'Your Projects' } },
-      { path: 'all', component: AllprojectsComponent, data: { title: 'All Projects' } },
-      { path: 'create', component: CreateprojectComponent, data: { title: 'Project Create' } },
-      { path: 'detail', component: ProjectdetailComponent, data: { title: 'Project Details' } },
-    ]
-  },
+  // {
+  //   path: 'actitude',
+  //   canActivate: [AuthGuardService],
+  //   children: [
+  //     { path: 'create', component: CreateprojectComponent, data: { title: 'Project Create' } }
+  //   ]
+  // },
   { path: 'login', component: LoginComponent, data: { title: 'Login' } },
   { path: 'menu', component: MenuComponent, data: { title: 'Menu' } },
   { path: 'explanation', component: ExplanationComponent, data: { title: 'Explanation' } },
   { path: 'interest', component: InterestComponent, data: { title: 'Choose Interest' } },
   { path: 'signup', component: SignupComponent, data: { title: 'Sign Up' } },
+  { path: 'actitude/all', component: AllprojectsComponent, data: { title: 'All Projects' } },
+  { path: 'actitude/detail', component: ProjectdetailComponent, data: { title: 'Project Details' } },
+  { path: 'actitude/your', component: YourprojectsComponent, data: { title: 'Your Projects' } },
+  { path: 'actitude/create', component: CreateprojectComponent, data: { title: 'Project Create' } },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
