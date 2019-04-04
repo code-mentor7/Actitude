@@ -11,13 +11,6 @@ import {ProjectService} from '../../service/project.service';
 })
 export class AllprojectsComponent implements OnInit {
 
-  list = [
-    {name: 'Hello'},
-    {name: 'Hello'},
-    {name: 'Hello'},
-    {name: 'Hello'},
-    {name: 'Hello'}
-  ];
   showMenu = false;
   allProjects: AllProjects[] = [];
   constructor(private router: Router, private api: ApiService, private pService: ProjectService) { }
