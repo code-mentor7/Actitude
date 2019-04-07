@@ -10,11 +10,15 @@ import {Router} from '@angular/router';
 export class HomeComponent implements OnInit {
 
   showMenu = false;
+  backgroundImage = '';
   constructor(private api: ApiService, private router: Router ) { }
 
   ngOnInit() {
     this.api.getBackgroundImage.get().promise()
-      .then((res) => console.log('success', res))
+      .then((res) => {
+        this.backgroundImage = res['result'][0];
+        console.log(this.backgroundImage);
+      })
       .catch((e) => console.log(e.error));
   }
 
